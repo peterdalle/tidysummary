@@ -1,0 +1,32 @@
+Package: tidysummary
+Type: Package
+Title: Show Summaries of Data Frames
+Version: 0.9.0
+Date: 2022-02-19
+Depends: R (>= 3.3)
+Language: en-GB
+Authors@R: c(
+    person("Peter", "Dahlgren", 
+           email = "peterdalle@gmail.com", 
+           role = c("aut", "cre"), 
+           comment = c(ORCID = "0000-0002-3509-3329"))
+  )
+Description: Shows a summary of a data frame in various sizes (small, medium or large),
+    returned as a data frame.
+URL: https://github.com/peterdalle/tidysummary
+BugReports: https://github.com/peterdalle/tidysummary/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    rlang,
+    stats,
+    utils
+Suggests: 
+    testthat (>= 2.1.0),
+    magrittr,
+    dplyr,
+    stringr,
+    knitr,
+    jsonlite,
+    openxlsx
+RoxygenNote: 7.1.2
