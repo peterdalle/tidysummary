@@ -101,6 +101,29 @@ You can also use:
 
 See the full documentation by typing `?tidysummary` in the R console.
 
+tidysummary column | Explanation
+-------- | --------------------------
+`column` | Name of the column
+`n` | Number of observations
+`class` | Data type
+`min` | Minimum value
+`max` | Maximum value
+`mean` | Mean value
+`sd` | Standard deviation
+`unique` | Number of unique values (includes `NA`)
+`median` | Median value
+`na` | Number of `NA`s (missing values)
+`mode` | Most frequent value
+`quant25` | 25 percent quantile
+`quant75` | 75 percent quantile
+`levels` | Number of factor levels (only relevant for factors)
+`head` | Top (first) value of the data frame
+`tail` | Bottom (last) value of the data frame
+`se` | Standard error
+`skewness` | Skewness
+`kurtosis` | Kurtosis
+`bytes` | Size in bytes of the memory usage of the column
+
 ## Support
 
 [Submit an issue](https://github.com/peterdalle/tidysummary/issues)
