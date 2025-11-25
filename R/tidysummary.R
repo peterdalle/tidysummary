@@ -156,7 +156,7 @@ tidysummary_large <- function(x) {
 }
 
 round_digits_dataframe <- function(df, digits) {
-  dplyr::mutate(df, dplyr::across(.fns = function(x) try_round(x, digits=digits)))
+  dplyr::mutate(df, dplyr::across(.cols = everything(), .fns = function(x) try_round(x, digits=digits)))
 }
 
 try_round <- function(x, digits) {
